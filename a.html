@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="eng" >
+<head>
+	 <meta charset="utf-8">
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style >
+	
+	
+	.row{
+		width: 100%;
+	}
+	.col-md-12{
+		padding: 0px 90px;
+	}
+	.col-6{
+		padding: 0px 0px;
+	}
+	.col-4{
+		font-family: OpenSans,sans-serif;
+	}
+	.col-3{
+		text-align: center;
+		padding: 0px 0px;
+	}
+	ol,ul,li {
+		padding: 0px ;
+	}
+
+	li a{
+		color: white;
+	}
+	.text-center{
+		text-align: center;
+	}
+	.title{
+		font-size: 14px;
+		font-family: sans-serif;
+	}
+	.heading{
+		margin-bottom: 40px;
+		font-size: 44px;
+		font-family: raleway;
+	}
+	.navbar a {	
+      color: white ;  
+	  padding:  25px 15px;
+	  font-size: 14px;
+	  font-family: Tahoma;
+	}
+	.navbar a:hover {
+  		color: rgb(0,200,176);
+  		text-decoration: none;
+	}
+
+	.iconnavbar i{
+		margin-top: 25px;
+		  padding:7px;
+		  color: white ;
+		
+	}
+	.fa-facebook:hover{
+		    text-decoration: none;
+    		outline: none;
+    		color: blue;
+    		border-radius: 50%;
+    		background-color: white;
+		
+	}
+	.fa-instagram:hover{
+		text-decoration: none;
+    	outline: none;
+    	color: red;
+		border-radius: 50%;
+		background-color: white;
+	}
+	.fa-twitter-square:hover{
+		text-decoration: none;
+		background-color: white;
+		color: lightblue;
+		border-radius: 50%;
+		
+	}
+	
+	#test{
+	position: absolute;
+	}
+	#OVS{
+		color: white;
+	position: absolute;
+	text-align: center;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	}
+	
+	.Unlimited-Features{
+		font-weight: bold;
+		font-family: raleway;
+		font-size: 18px;
+		
+	}
+	.Unlimited-Features:hover{
+		color: #82B440;
+	}
+	.Creative-activities{
+		font-weight: bold;
+		font-family: raleway;
+		font-size: 18px;
+		
+	}
+	.Creative-activities:hover{
+		color: #07AAA5;
+	}
+	.Responsive-time{
+		font-weight: bold;
+		font-family: raleway;
+		font-size: 18px;
+	}
+	.Responsive-time:hover{
+		color: #EC768C;
+	}
+	.Creative-idea{
+		font-weight: bold;
+		font-family: raleway;
+		font-size: 18px;
+	}
+	.Creative-idea:hover{
+		color: #31AAE1;
+	}
+	.Responsive-connection{
+		font-weight: bold;
+		font-family: raleway;
+		font-size: 18px;
+	}
+	.Responsive-connection:hover{
+		color: #C183D6;
+	}
+	.Creative-design{
+		font-weight: bold;
+		font-family: raleway;
+		font-size: 18px;
+	}
+	.Creative-design:hover{
+		color: #99D8CC;
+	}
+
+	.letstalk {
+		position: absolute;
+		text-align: center;
+		text-decoration: none;
+		color: white;
+		padding: 150px 250px 0px;
+	}
+	.btnletstalk{
+		padding: 12px 30px;
+		color: white ;
+		font-family: OpenSans,sans-serif;
+		font-size: 15px;
+		font-weight: bold;
+		text-transform: capitalize;
+		background-color: #82B440;
+		border: none ;
+		transition-duration: 0.7s;
+		/*cursor: pointer;*/
+	}
+	.btnletstalk:hover{
+		background-color: #00CED1;
+	}
+	.uniqueexperience{
+		padding: 90px 0px;
+		margin: 0px;
+		color: black;
+		font-family: raleway;
+	}
+	.r-feature li{
+	        color: #1b1d1f;
+		    display: inline-block;
+		    /*text-transform: capitalize;*/
+		    width: 40%;
+		    margin-bottom: 15px;
+	}
+	.r-feature li:before {
+			content: '\f00c';
+		    font-family: 'FontAwesome';
+		    /*display: inline-block;*/
+		    margin-right: 10px;
+		    /*vertical-align: middle;*/
+		    color: #82B440;
+	}
+	.fauser{
+		color: white;
+		padding: 30px 20px;
+		background-color: deepskyblue;
+	}
+	.fa-user{
+		
+	}
+	.facode{
+		color: white;
+		padding: 30px 20px;
+		background-color: #c183d6;
+	}
+	.fa-code{
+		
+	}
+	.fatasks{
+		color: white;
+		padding: 30px 20px;
+		background-color: #ec768c;
+	}
+	.fa-tasks{
+		
+	}
+	.facoffee{
+		color: white;
+		padding: 30px 20px;
+		background-color: #74c8b8;
+	}
+	.fa-coffee{
+		
+	}
+	.expertise{
+		padding: 90px 0px;
+		margin: 0px;
+	}
+	.what-we-do{
+		margin: 0px 0px;
+		padding: 90px 90px 90px;
+		background-color: #ececec;
+	}
+	.what-we-do p{
+		margin: 0 15px;
+	}
+	.what-we-do i{
+		padding: 25px;
+		color: white;
+		background-color: #31aae1;
+		border-radius: 50%;
+		position: absolute;
+		top: 22%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.green-top{
+		height: 72px;
+		padding: 0px;
+		background-color: #74c8b8;
+	}
+	.pink-top{
+		height: 72px;
+		padding: 0px;
+		background-color: #ec768c;
+	}
+	.purple-top{
+		height: 72px;
+		padding: 0px;
+		background-color: #c183d6;
+	}
+	.blue-top {
+		height: 72px;
+		padding: 0px;
+		background-color: #31aae1;
+	}
+	
+	.we-do-bgc{
+		height: 250px;
+		background-color: white;
+	}
+	.we-do-bgc p{
+		font-size: 14px;
+		padding-bottom: 20px;
+	}
+	.we-do-bgc h4{
+		padding-top: 70px;
+	}
+	.green-text {
+		color: #74c8b8;
+			font-weight: bold;
+			font-size: 13px;
+	}
+	.green-text:hover{
+		color: #74c8b8;
+		text-decoration: underline;
+	}
+	.pink-text{
+		color: #ec768c;
+			font-weight: bold;
+			font-size: 13px;
+	}
+	.pink-text:hover{
+		color: #ec768c;
+		text-decoration: underline;
+	}
+	.purple-text{
+		color: #c183d6;
+			font-weight: bold;
+			font-size: 13px;
+	}
+	.purple-text:hover{
+		color: #c183d6;
+		text-decoration: underline;
+	}
+	.blue-text{
+		color: #31aae1;
+			font-weight: bold;
+			font-size: 13px;
+	}
+	.blue-text:hover{
+		color: #31aae1;
+		text-decoration: underline;
+	}
+	
+
+	a.readmore {
+	    text-decoration: none;
+	}
+	.creative-thinkers{
+		padding: 130px 90px 0px 90px;
+		margin: 0px;
+	}
+	.thinker-image .overlay .pink {
+    	background: rgba(236,118,140,.75);
+	}
+	.Lastest-Projects{
+		padding: 130px 90px 0px 90px;
+		background-color: #f8f8f8;
+	}
+	.menu {
+    	margin-bottom: 50px;
+
+	}
+	.menu ul li a {
+		
+	}
+	.menu li {
+		display:inline-block;
+		padding: 6px 10px;
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+	}
+	
+	li a:hover:not(.active) {
+		color: white;
+	  background-color: red;
+	}
+
+	  .active {	
+	  	color: white;
+	    background-color: pink;
+	  }
+		
+</style>
+</head>
+<body >
+	
+	<div class="row" id="test" >
+		<div class="col-3" > <img src="C:\Users\Admin\AppData\Roaming\Sublime Text 3\Packages\User\thực tập web\images\logo-white.png" 	style="padding: 29px 40px;">
+		</div>
+		<div class="col-6"> 
+			<div class="navbar" >
+			<a href="#HOME" >HOME</a>
+			<a href="#ABOUT">ABOUT</a>
+			<a href="#TEAM">TEAM</a>
+			<a href="#WORK">WORK</a>
+			<a href="#PRICES">PRICES</a>
+			<a href="#BLOG">BLOG</a>
+			<a href="#CONTACT US">CONTACT US</a>
+			
+			</div>			
+		</div>
+		<div class="col-3">
+			<div class="iconnavbar">
+			<a href="#Facebook" ><i class="fa fa-facebook" ></i></a>
+			<a href="#Instagram "><i class="fa fa-instagram" ></i></a>
+			<a href="#twitter"><i class="fa fa-twitter-square" ></i></a>
+			</div>
+		</div>	
+				
+	</div>
+	<div class="col-12" id="OVS" >
+			<p style="font-size: 20px;font-family: sans-serif; ">We craft unique digital experience layouts!</p>
+			<h2 style="font-size: 58px;font-family: raleway; ">Style Your
+			<br>Business Strategy 
+			</h2>
+	</div>
+
+	<div >
+		<img src="C:\Users\Admin\AppData\Roaming\Sublime Text 3\Packages\User\thực tập web\images\banner_text.jpg" width="100%">		
+	</div>
+	<div>
+		<p style="text-align: center;margin: 130px 60px 10px 60px">Our Valued Services</p>
+		<p style="font-size:45px ;text-align:center ;font-family: raleway;margin: 0px 60px 40px 60px;">What We Offer</p>
+	</div>	
+	<div class="row text-center" >
+		<div class="col-4 icons8" >
+			<img src="C:\Users\Admin\AppData\Roaming\Sublime Text 3\Packages\User\thực tập web\images\icons8-gear-50.png">
+			<p class="Unlimited-Features" >Unlimited Features<br></p> 
+			<p style="font-size: 12px;">Keep away from people who try to belittle your ambitions. Small people always do that but the really great.</p>
+		</div>
+		<div class="col-4 icons8">
+			<img src="C:\Users\Admin\AppData\Roaming\Sublime Text 3\Packages\User\thực tập web\images\icons8-sun-umbrella-50.png">
+			<p class="Creative-activities">Creative Activities<br></p>
+			<p style="font-size: 12px;">Keep away from people who try to belittle your ambitions. Small people always do that but the really great.</p>
+		</div>
+		<div class="col-4 icons8">
+			<img src="C:\Users\Admin\AppData\Roaming\Sublime Text 3\Packages\User\thực tập web\images\icons8-alarm-clock-50.png">
+			<p class="Responsive-time">Responsive Time<br></p>
+			<p style="font-size: 12px;">Keep away from people who try to belittle your ambitions. Small people always do that but the really great.</p>
+		</div>
+	</div>
+	<div class="row text-center" style=" margin-bottom: 70px;">
+		<div class="col-4 icons8">
+			<img src="C:\Users\Admin\AppData\Roaming\Sublime Text 3\Packages\User\thực tập web\images\icons8-idea-50.png">
+			<p class="Creative-idea">Creative Idea<br></p>
+			<p style="font-size: 12px;">Keep away from people who try to belittle your ambitions. Small people always do that but the really great.</p>
+		</div>
+		<div class="col-4 icons8">
+			<img src="C:\Users\Admin\AppData\Roaming\Sublime Text 3\Packages\User\thực tập web\images\icons8-globe-earth-50.png">
+			<p class="Responsive-connection">Responsive Connection<br></p>
+			<p style="font-size: 12px;">Keep away from people who try to belittle your ambitions. Small people always do that but the really great.</p>
+		</div>
+		<div class="col-4 icons8">
+			<img src="C:\Users\Admin\AppData\Roaming\Sublime Text 3\Packages\User\thực tập web\images\icons8-edit-property-50.png">
+			<p class="Creative-design">Creative Design<br></p>
+			<p style="font-size: 12px;">Keep away from people who try to belittle your ambitions. Small people always do that but the really great.</p>
+		</div>
+	</div>
+	<div>
+		
+		<div class ="letstalk" >
+			<p style="margin-bottom: 25px;width: 800px;">Unleash your creative potential with BizOne</p>
+			<h1 style="margin-bottom: 30px; width: 800px;">Looking For Exclusive Digital Services?</h1>
+			<a href="#Let's Talk"><button class="btnletstalk">Let's Talk</button></a>
+		</div>
+		<img src="C:\Users\Admin\AppData\Roaming\Sublime Text 3\Packages\User\thực tập web\images\paralax-index1.jpg" width="100%" >
+
+	</div>
+	<div class="row uniqueexperience" >
+			<div class="col-6">
+				<img src="C:\Users\Admin\AppData\Roaming\Sublime Text 3\Packages\User\thực tập web\images\full-responsive.png" style="margin: -42px 0px 0px;height: 395px; width: 637px;">
+			</div>
+			<div class="col-6" >
+				<h3 style="margin: 0px 0px 30px;">Unique Experience</h3>
+				<p style="margin: 0px 0px 10px;">We have a number of different teams within our agency that specialise in different areas of business so you can be sure that you won’t receive a generic service and although we can’t boast years and years of service we can ensure you that is a good thing in this industry.</p>
+				<h4 style="margin: 40px 0px 20px;">Features</h4>
+				<ul class="r-feature">
+	              <li>Creative Design</li>
+	              <li>Website Development</li>
+	              <li>Mobile Development</li>
+	              <li>Website Designing</li>
+	              <li>Online Marketing</li>
+	              <li>Graphic Design</li>
+	              <li>Graphic Design</li>
+	              <li>Wordpress Theme</li>
+	            </ul>
+	            <div class="col-6" style="margin: 30px 0px 0px 20px;">
+					<i class="fa fa-laptop fa-4x" ></i>
+					<i class="fa fa-tablet fa-3x"></i>
+					<i class="fa fa-mobile fa-3x"></i>
+				</div>
+			</div>
+			
+	</div>
+	<div class="row" style="margin: 0px 0px;">
+		<div class="col-3 fauser">
+			<i class="fa fa-user fa-3x"></i>
+			<h2 style="font-size: 44px;"> 125 </h2>
+			<p> Happy Customers</p>
+		</div>
+		<div class="col-3 facode">
+			<i class="fa fa-code fa-3x"></i>
+			<h2 style="font-size: 44px;"> 865 </h2>
+			<p> Lines of code</p>
+		</div>
+		<div class="col-3 fatasks">
+			<i class="fa fa-tasks fa-3x"></i>
+			<p>510<br>Project completed</p>
+		</div>
+		<div class="col-3 facoffee">
+			<i class="fa fa-coffee fa-3x"></i>
+			<p>1350<br>Cup of coffees</p>
+		</div>
+
+	</div>
+	<div class="row expertise">
+		<div class="col-md-12 text-center ">
+			<p class="title">Some Of Our Skills</p>
+			<h2 class="heading">Our Expertise</h2>
+		</div>
+		<div class="row text-center"  style="margin: 0px 0px;">
+			<div class="col-1"></div>
+			<div class="col-2">
+				<p>Web Developement</p>
+				<span class=" circle-text circliful ">86%</span>
+			</div>
+			<div class="col-2">
+				<p>Developement</p>
+				<span class=" circle-text circliful ">90%</span>
+			</div>
+			<div class="col-2">
+				<p>App Developement</p>
+				<span class=" circle-text circliful ">75%</span>
+			</div>
+			<div class="col-2">
+				<p>Performance</p>
+				<span class=" circle-text circliful ">79%</span>
+			</div>
+			<div class="col-2">
+				<p>Usability</p>
+				<span class=" circle-text circliful ">92%</span>
+			</div>
+			<div class="col-1"></div>
+		</div>
+	</div>
+	<div class="row what-we-do ">
+		<div class="col-md-12 text-center">
+			<p>Our Service Keeps You Happy</p>
+			<h2 class="heading">What We Do</h2>
+		</div>
+		<div class="col-3 " style="padding: 0px 15px;">
+			<div class="green-top text-center "></div>
+			<i class="fa fa-edit fa-3x" ></i>
+			<div class="we-do-bgc">
+				<h4> Hot Design </h4>
+				<p>Keep away from people who try to belittle your ambitions. Small people always do that.</p>
+				<a href="#." class="readmore green-text">READ MORE</a>
+			</div>		
+		</div>
+		<div class="col-3" style="padding: 0px 15px;">
+			<div class="pink-top text-center "></div>
+			<i class="fa fa-edit fa-3x" ></i>
+			<div class="we-do-bgc">
+				<h4> Hot Design </h4>
+				<p>Keep away from people who try to belittle your ambitions. Small people always do that.</p>
+				<a href="#." class="readmore pink-text">READ MORE</a>
+			</div>	
+		</div>
+		<div class="col-3" style="padding: 0px 15px;">
+			<div class="purple-top text-center "></div>
+			<i class="fa fa-edit fa-3x" ></i>
+			<div class="we-do-bgc">
+				<h4 > Hot Design </h4>
+				<p>Keep away from people who try to belittle your ambitions. Small people always do that.</p>
+				<a href="#." class="readmore purple-text">READ MORE</a>
+			</div>	
+		</div>
+		<div class="col-3" style="padding: 0px 15px;">
+			<div class="blue-top text-center "></div>
+			<i class="fa fa-edit fa-3x" ></i>
+			<div class="we-do-bgc">
+				<h4 > Hot Design </h4>
+				<p >Keep away from people who try to belittle your ambitions. Small people always do that.</p>
+				<a href="#." class="readmore blue-text">READ MORE</a>
+			</div>	
+		</div>
+	</div>
+	<div class=" creative-thinkers">
+		<div class="col-md-12 text-center">
+			<p class="title">Passionate About Perfection</p>
+			<h2 class="heading">Creative Thinkers</h2>
+		</div>
+		<div class="row text-center" >
+			<div class="col-md-4" >
+				<img src="C:\Users\Admin\AppData\Roaming\Sublime Text 3\Packages\User\thực tập web\images\thinker.jpg" style="width: 100%;">
+				<h4 style="margin-top: 20px;">John Doe</h4>
+				<h6 style="color: #838383; margin-bottom: 15px;">CEO</h6>
+				<p style="font-size: 14px;">Keep away from people who try to belittle your ambitions. Small people always do that.</p>
+			</div>
+			<div class="col-md-4">
+				<img src="C:\Users\Admin\AppData\Roaming\Sublime Text 3\Packages\User\thực tập web\images\thinker2.jpg" style="width: 100%;">
+				<h4 style="margin-top: 20px;">Mary Jane</h4>
+				<h6 style="color: #838383; margin-bottom: 15px;">Co-Founder</h6>
+				<p style="font-size: 14px;">Keep away from people who try to belittle your ambitions. Small people always do that.</p>
+			</div>
+			<div class="col-md-4" >
+				<img src="C:\Users\Admin\AppData\Roaming\Sublime Text 3\Packages\User\thực tập web\images\thinker3.jpg" style="width: 100%;">
+				<!-- <div class="caption">
+					<div class="blur"></div>
+					<div class="caption-text">
+						<h1>Amazing Caption</h1>
+						<p>Whatever It Is - Always Awesome</p>
+					</div>
+				</div> -->
+				<div>
+					<h4 style="margin-top: 20px;">Josh Clark</h4>
+					<h6 style="color: #838383; margin-bottom: 15px;">Sales Head</h6>
+					<p style="font-size: 14px;">Keep away from people who try to belittle your ambitions. Small people always do that.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="Lastest-Projects">
+		<div class="col-md-12 text-center">
+			<div class="title">Passionate About Perfection</div>
+			<div class="heading">Pricing Tables</div>
+		</div>
+		<div class="menu text-center">
+			<ul >
+				<li ><a href="All" class="active"> All</a> </li>
+				<li ><a href="Brand" class="active">Brand</a> </li>
+				<li ><a href="Design" class="active">Design</a> </li>
+				<li ><a href="Graphic" class="active">Graphic</a> </li>
+				<li ><a href="Video" class="active">Video</a> </li>
+			</ul>
+
+		</div>
+	</div>
+
+</body>		
+</html>
